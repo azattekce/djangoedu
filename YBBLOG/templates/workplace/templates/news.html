@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+
+{% block  body %}
+<div class="iframe-container">
+
+{% for item in news%}
+<ul>
+<li>
+Saat:{{item.times}}<br>
+İçerik:{{item.contents}}<br>
+Adres:{{item.srcs}}<br>
+</li>
+</ul> 
+
+{% endfor %}
+
+</div>
+{% endblock  %}
+
+
+
+
+
+
+
+
