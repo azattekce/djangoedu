@@ -17,7 +17,7 @@ def articles(request):
 def index(request):
     return render(request,"index.html")
     
-def about(request):
+def about(request):  
     return render(request,"about.html")
 @login_required(login_url = "user:login")
 def dashboard(request):

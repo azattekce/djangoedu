@@ -7,7 +7,7 @@
     Hoşgeldiniz, <small>{{request.user.username}}</small>
 </p>
 <hr>
-<a class = "btn btn-danger" href = "{% url 'article:addarticle' %}">Makale Ekle </a>
+<a class = "btn btn-success" href = "{% url 'article:addarticle' %}">Makale Ekle </a>
 <hr>
 {% if articles %}
 <table class="table">
@@ -28,7 +28,7 @@
             <td><a href="{% url 'article:detail' article.id %}">{{article.title}}</a></td>
             <td>{{article.author.username}}</td>
             <td>{{article.created_date}}</td>
-            <td><a href="{% url 'article:update' article.id %}" class = "btn btn-danger">Güncelle</a></td>
+            <td><a href="{% url 'article:update' article.id %}" class = "btn btn-success">Güncelle</a></td>
             <td><a href="{% url 'article:delete' article.id %}" class = "btn btn-danger">Sil</a> </td>
               
           </tr>
